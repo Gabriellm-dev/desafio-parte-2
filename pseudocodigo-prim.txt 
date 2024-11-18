@@ -1,0 +1,16 @@
+
+Pseudocódigo para o Algoritmo de Prim (Árvore Geradora Mínima - AGM)
+
+Prim(Grafo G, Nodo inicial)
+    Inicializar a árvore geradora mínima com o nodo inicial
+    Inicializar todas as arestas como não visitadas
+    Colocar todas as arestas conectadas ao nodo inicial em uma fila de prioridade
+
+    Enquanto houver arestas na fila de prioridade:
+        Remover a aresta com menor peso da fila
+        Se a aresta conecta um nodo ainda não visitado:
+            Adicionar essa aresta à árvore geradora mínima
+            Marcar o nodo como visitado
+            Adicionar à fila todas as arestas do novo nodo
+
+    Retornar a árvore geradora mínima e seu custo total

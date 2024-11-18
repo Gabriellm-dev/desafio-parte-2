@@ -1,0 +1,17 @@
+
+Pseudocódigo para o Algoritmo de Dijkstra (Caminho Mínimo - CM)
+
+Dijkstra(Grafo G, Nodo origem)
+    Inicializar distâncias de todos os vértices para infinito
+    Definir a distância do nodo origem para 0
+    Colocar todos os vértices em uma fila de prioridade
+
+    Enquanto a fila de prioridade não estiver vazia:
+        Remover o vértice u com a menor distância da fila
+        Para cada vizinho v de u:
+            Calcular a nova distância d através de u
+            Se d for menor que a distância armazenada de v:
+                Atualizar a distância de v para d
+                Atualizar v na fila de prioridade
+
+    Retornar distâncias mínimas de todos os vértices a partir da origem

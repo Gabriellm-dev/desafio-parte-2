@@ -1,0 +1,14 @@
+
+Pseudocódigo para o Algoritmo de Kruskal (Árvore Geradora Mínima - AGM)
+
+Kruskal(Grafo G)
+    Inicializar uma lista vazia para as arestas da árvore geradora mínima
+    Ordenar todas as arestas do grafo em ordem crescente de peso
+    Inicializar uma estrutura de união-find para controlar componentes conectados
+
+    Para cada aresta (u, v) em ordem crescente de peso:
+        Se u e v não estão no mesmo componente:
+            Adicionar a aresta (u, v) na árvore geradora mínima
+            Unir os componentes de u e v
+
+    Retornar a árvore geradora mínima e seu custo total
